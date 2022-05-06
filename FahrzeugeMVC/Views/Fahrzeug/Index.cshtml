@@ -1,0 +1,35 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@using FahrzeugeMVC.Models
+@model FahrzeugListeModel;
+
+<p>Diese Fahrzeuge befinden sich derzeit in der Datenbank:</p>
+<table class="table table-hover mb-0">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Type</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var fahrzeug in Model.Fahrzeuge)
+        {
+            <tr>
+                <td>@fahrzeug.Id</td>
+                <td>@fahrzeug.Name</td>
+                <td>@fahrzeug.GetType()</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<br />
+
+<p>
+    @Html.ActionLink("Neues Fahrzeug anlegen", "Einfuegen", "Fahrzeug")
+</p>

@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Fahrzeuge\Fahrzeuge.csproj" />
     <ProjectReference Include="..\FahrzeugDatenbank\FahrzeugDatenbank.csproj" />
+    <ProjectReference Include="..\Fahrzeuge\Fahrzeuge.csproj" />
   </ItemGroup>
 
 </Project>

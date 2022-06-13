@@ -5,7 +5,7 @@
 }
 
 @using FahrzeugeMVC.Models
-@model FahrzeugEinfuegenModel
+@model Aktualisieren
 
 <p>Fuegen Sie ein neues Fahrzeug hinzu:</p>
 
@@ -18,7 +18,7 @@
     </div>
 
     <div>
-        <label class="control-label">Name</label>
+        <label class="control-label">Type</label>
         <select asp-for="Type" asp-items="Model.FahrzeugTypen" class="form-control"></select>
         <span asp-validation-for="Type" class="text-danger"></span>
     </div>

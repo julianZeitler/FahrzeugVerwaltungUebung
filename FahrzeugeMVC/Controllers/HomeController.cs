@@ -1,8 +1,8 @@
-﻿using FahzeugMVC.Models;
+﻿using FahrzeugeMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace FahzeugMVC.Controllers
+namespace FahrzeugeMVC.Controllers
 {
     public class HomeController : Controller
     {

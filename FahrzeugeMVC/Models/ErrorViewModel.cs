@@ -1,4 +1,4 @@
-namespace FahzeugMVC.Models
+namespace FahrzeugeMVC.Models
 {
     public class ErrorViewModel
     {

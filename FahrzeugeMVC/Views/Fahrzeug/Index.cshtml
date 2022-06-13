@@ -23,6 +23,8 @@
                 <td>@fahrzeug.Id</td>
                 <td>@fahrzeug.Name</td>
                 <td>@fahrzeug.GetType()</td>
+                <td><a asp-action=Loesche asp-controller=Fahrzeug asp-route-id=@fahrzeug.Id>Löschen</a></td>
+                <td><a asp-action=Aktualisieren asp-controller=Fahrzeug asp-route-id=@fahrzeug.Id>Aktualisieren</a></td>
             </tr>
         }
     </tbody>
